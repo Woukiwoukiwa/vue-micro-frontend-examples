@@ -34,7 +34,9 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
-export default class HelloWorld extends Vue {}
+export default class HelloWorld extends Vue {
+  private name = 'HelloWorldTS';
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
