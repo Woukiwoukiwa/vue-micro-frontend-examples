@@ -1,0 +1,10 @@
+version: '3'
+services:
+  js-micro-frontend:
+    image: js-micro-frontend/micro-frontend
+    ports:
+    - 2016:2015
+  ts-micro-frontend:
+    image: ts-micro-frontend/micro-frontend
+    ports:
+    - 2017:2015

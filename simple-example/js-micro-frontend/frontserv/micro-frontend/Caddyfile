@@ -1,0 +1,4 @@
+:2015
+root /www
+log stdout
+limits 100mb

@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "vue-micro-frontend-simple-example",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Woukiwoukiwa/vue-micro-frontend-examples.git"
+  },
+  "author": "domi",
+  "license": "MIT",
+  "scripts": {
+    "dcup": "docker-compose -f ./docker-compose.yml up",
+    "dcdown": "docker-compose -f ./docker-compose.yml down"
+  },
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "workspaces": [
+  ]
+}
