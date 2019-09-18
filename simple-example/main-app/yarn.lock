@@ -10007,10 +10007,10 @@ vue-loader@^15.7.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-micro-frontend@0.20.11:
-  version "0.20.11"
-  resolved "https://registry.yarnpkg.com/vue-micro-frontend/-/vue-micro-frontend-0.20.11.tgz#df00bb14dd0b6bc4f7faed9334ad485c4a59b75c"
-  integrity sha512-35sOAdxXFXHzLRTxI+aLJ6KbCsqIaiF0KipBnukWCzbJJdZL8U0ek6Km7f9xWHX8uE5pQ7HyKyeDKMmZ0Ha92A==
+vue-micro-frontend@0.20.12:
+  version "0.20.12"
+  resolved "https://registry.yarnpkg.com/vue-micro-frontend/-/vue-micro-frontend-0.20.12.tgz#34b79bfb0f3f2a8de00615ab82665a9eb89c8aad"
+  integrity sha512-sBy9XEwqZBREGkgqcptJBRXbHV3ZoOHq8hSlMCy5QQz+wsldnivIttviFbUA9L8IyrYbCJwJZ1AjASTpDZjOpQ==
   dependencies:
     "@vue-micro-frontend/types" "^0.0.3"
     core-js "^2.6.5"

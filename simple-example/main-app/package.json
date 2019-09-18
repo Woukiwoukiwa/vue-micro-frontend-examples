@@ -11,7 +11,7 @@
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
-    "vue-micro-frontend": "0.20.11"
+    "vue-micro-frontend": "0.20.12"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
