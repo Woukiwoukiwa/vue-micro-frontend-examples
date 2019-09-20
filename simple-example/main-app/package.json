@@ -10,8 +10,9 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
+    "vue-micro-frontend": "0.20.15",
     "vue-router": "^3.0.3",
-    "vue-micro-frontend": "0.20.12"
+    "vuejs-logger": "^1.5.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",

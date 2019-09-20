@@ -1,5 +1,5 @@
 <template>
-  <v-micro-frontend :microFrontend="jsMicroFrontend"></v-micro-frontend>
+  <v-micro-frontend :microFrontend="tsMicroFrontend" :props="mydata"></v-micro-frontend>
 </template>
 
 <script>
@@ -9,9 +9,12 @@ export default {
   components: {},
   data: () => {
     return {
-        jsMicroFrontend: {
+      tsMicroFrontend: {
         name: 'ts-micro-frontend',
         url: 'http://localhost:2017/ts-micro-frontend.umd.js',
+      },
+      mydata: {
+        message: 'Hey, I am a message',
       }
     }
   }

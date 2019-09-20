@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>Micro-frontend Typescript</h1>
+    <h2>{{ message }}</h2>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -35,7 +36,8 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 export default class HelloWorld extends Vue {
-  private name = 'HelloWorldTS';
+  @Prop({ type: String, default: () => ({}) })
+  protected message!: string;
 }
 </script>
 

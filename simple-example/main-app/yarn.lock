@@ -1571,10 +1571,13 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
-"@vue-micro-frontend/types@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@vue-micro-frontend/types/-/types-0.0.3.tgz#f4d3869670cce10f07f85a98d32568d4de3a921b"
-  integrity sha512-YnT0lqlKwkOlZT1aUcGeWuZZB8pqbH4Ge2W7mragxRVecwK8JUrj36mKd2pIjY8Rpe2tGkYLQEnw7Hg9q9cfnw==
+"@vue-micro-frontend/types@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@vue-micro-frontend/types/-/types-0.0.5.tgz#0af17115f603fb5cd58084f8da033d244afe25dc"
+  integrity sha512-yevsdrC3YG5gtiDW3JTdwZaNCghfFQlRZqQGFLS3UY516pGJFOzQMGLLZQFU9Z33VeWBuChEggh4y9wcJgm5fA==
+  dependencies:
+    vue "^2.6.10"
+    vuex "^3.0.1"
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0":
   version "1.0.0"
@@ -4105,6 +4108,11 @@ es-to-primitive@^1.2.0:
     is-callable "^1.1.4"
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
+
+es6-object-assign@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/es6-object-assign/-/es6-object-assign-1.1.0.tgz#c2c3582656247c39ea107cb1e6652b6f9f24523c"
+  integrity sha1-wsNYJlYkfDnqEHyx5mUrb58kUjw=
 
 es6-promise@^4.0.3:
   version "4.2.8"
@@ -10007,12 +10015,12 @@ vue-loader@^15.7.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-micro-frontend@0.20.12:
-  version "0.20.12"
-  resolved "https://registry.yarnpkg.com/vue-micro-frontend/-/vue-micro-frontend-0.20.12.tgz#34b79bfb0f3f2a8de00615ab82665a9eb89c8aad"
-  integrity sha512-sBy9XEwqZBREGkgqcptJBRXbHV3ZoOHq8hSlMCy5QQz+wsldnivIttviFbUA9L8IyrYbCJwJZ1AjASTpDZjOpQ==
+vue-micro-frontend@0.20.15:
+  version "0.20.15"
+  resolved "https://registry.yarnpkg.com/vue-micro-frontend/-/vue-micro-frontend-0.20.15.tgz#35bb3998b3bd0167c0f2eb3144ade1c647a422b0"
+  integrity sha512-8wzR7ubm+YkI8PG7QrWNdDEMEKdEWeFRsKwHPbS5nSWAp+6c4TYNx7mcqPIPBEzTGmbSqNtbuXLY2gGQ00fNeA==
   dependencies:
-    "@vue-micro-frontend/types" "^0.0.3"
+    "@vue-micro-frontend/types" "^0.0.5"
     core-js "^2.6.5"
     lerna "^3.16.4"
     vue "^2.6.10"
@@ -10057,6 +10065,13 @@ vue@^2.6.10:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
+
+vuejs-logger@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/vuejs-logger/-/vuejs-logger-1.5.3.tgz#fc8b7428af9c1bc252eb7deddd5638bce3b91549"
+  integrity sha512-jw+AQ+IMJBz18fA4opHsqaU7P7yQNugoGywT6i3DCd1BWqg9eUx03Fr21kayqGcP4dxUwhVkkjuOyeirxLJC8g==
+  dependencies:
+    es6-object-assign "1.1.0"
 
 vuex@^3.0.1:
   version "3.1.1"

@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:lib": "vue-cli-service build --target lib --name $npm_package_name ./src/components/index.ts",
+    "build:lib": "vue-cli-service build --target lib --name $npm_package_name ./src/components/HelloWorld.vue",
     "lint": "vue-cli-service lint",
     "docker-build:micro-frontend": "yarn build:lib && docker build -f ./deploy/micro-frontend/Dockerfile -t $npm_package_name/micro-frontend:latest ."
   },
