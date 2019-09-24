@@ -1,0 +1,12 @@
+:2015
+
+log stdout
+limits 100mb
+
+proxy / http://main-app.webpack:8080 {
+    except /api /micro-frontend
+}
+
+proxy /micro-frontend/my-music http://my-music.micro-frontend:2015
+
+proxy /api/my-music http://my-music.stub:2015

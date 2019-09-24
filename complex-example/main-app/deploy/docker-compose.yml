@@ -1,0 +1,14 @@
+version: '3'
+services:
+  main-app.proxy:
+    image: main-app/proxy
+    ports:
+    - 2015:2015
+    volumes:
+        - ../frontserv/proxy/Caddyfile:/Caddyfile
+  main-app.webpack:
+    image: main-app/webpack
+    volumes:
+        - ../:/www
+        
+

@@ -1,0 +1,6 @@
+:2015
+root stub/
+
+log stdout
+
+rewrite musics api/musics.json

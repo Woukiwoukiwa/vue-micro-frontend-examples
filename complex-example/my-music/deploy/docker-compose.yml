@@ -1,0 +1,34 @@
+version: '3'
+services:
+  my-music.proxy:
+    image: my-music/proxy
+    ports:
+    - 2016:2015
+    volumes:
+        - ../frontserv/proxy/Caddyfile:/Caddyfile
+    networks:
+      - my-music
+  my-music.webpack:
+    image: my-music/webpack
+    volumes:
+        - ../:/www
+    networks:
+      - my-music
+  my-music.stub:
+    image: my-music/stub
+    volumes:
+        - ../stub:/stub
+    networks:
+      - main-app_default
+      - my-music
+  my-music.micro-frontend:
+    image: my-music/micro-frontend
+    networks:
+      - main-app_default
+      - my-music
+networks:
+  my-music:
+    driver: bridge
+  main-app_default:
+    external: true
+

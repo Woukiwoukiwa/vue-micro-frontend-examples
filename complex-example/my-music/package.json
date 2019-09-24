@@ -1,0 +1,43 @@
+{
+  "name": "my-music",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:lib": "vue-cli-service build --target lib --formats umd-min --name $npm_package_name ./src/components/index.ts",
+    "lint": "vue-cli-service lint",
+    "docker-command": "yarn serve",
+    "dcup": "docker-compose -f ./deploy/docker-compose.yml up",
+    "dcdown": "docker-compose -f ./deploy/docker-compose.yml down",
+    "docker-network": "docker network create my-music-net",
+    "docker-build:webpack": "docker build -f ./deploy/webpack/Dockerfile -t $npm_package_name/webpack:latest .",
+    "docker-build:proxy": "docker build -f ./deploy/proxy/Dockerfile -t $npm_package_name/proxy:latest .",
+    "docker-build:stub": "docker build -f ./deploy/stub/Dockerfile -t $npm_package_name/stub:latest .",
+    "docker-build:micro-frontend": "yarn build:lib && docker build -f ./deploy/micro-frontend/Dockerfile -t $npm_package_name/micro-frontend:latest ."
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.1.0",
+    "vuetify": "^2.0.0",
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-typescript": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.4.3",
+    "vue-cli-plugin-vuetify": "^0.6.3",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.2.2"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.10"
+  }
+}
