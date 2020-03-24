@@ -1,0 +1,6 @@
+:2015
+root /www
+log stdout
+limits 100mb
+
+rewrite /micro-frontend/my-music my-music.umd.min.js

@@ -1,0 +1,10 @@
+:2015
+
+log stdout
+limits 100mb
+
+proxy / http://my-music.webpack:8080 {
+    except /api /component
+}
+
+proxy /api/my-music http://my-music.stub:2015

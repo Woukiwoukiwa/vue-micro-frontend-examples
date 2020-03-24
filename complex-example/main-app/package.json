@@ -1,0 +1,36 @@
+{
+  "name": "main-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dcup": "docker-compose -f ./deploy/docker-compose.yml --project-name $npm_package_name up",
+    "dcdown": "docker-compose -f ./deploy/docker-compose.yml --project-name $npm_package_name down",
+    "docker-command": "yarn serve",
+    "docker-build:webpack": "docker build -f ./deploy/webpack/Dockerfile -t $npm_package_name/webpack:latest .",
+    "docker-build:proxy": "docker build -f ./deploy/proxy/Dockerfile -t $npm_package_name/proxy:latest ."
+  },
+  "dependencies": {
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-micro-frontend": "0.20.16",
+    "vue-property-decorator": "^8.1.0",
+    "vue-router": "^3.0.3",
+    "vuetify": "^2.0.0",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-typescript": "^3.11.0",
+    "@vue/cli-service": "^3.11.0",
+    "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.4.3",
+    "vue-cli-plugin-vuetify": "^0.6.3",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.2.2"
+  }
+}
